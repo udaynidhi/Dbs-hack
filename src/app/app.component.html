@@ -1,0 +1,43 @@
+<html>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<nav class="navbar navbar-inverse bg-dark"  >
+  <div class="container-fluid">
+    <div class="navbar-header" style="text-align: left; ">
+      <a class="navbar-brand" href="#" style="text-align: justify; margin-right: 1500px;">Book Order</a>
+    </div>
+
+  </div>
+</nav>
+<br> <br>
+<div class="ele">
+  <form action="post">
+<label for="stock">Search stock : </label>
+
+<select name="stock" id="stock">
+  <option value="Dbs">Dbs</option>
+  <option value="temenos">temenos</option>
+  <option value="persistent">persistent</option>
+  <option value="legato">legato</option>
+</select>
+<br> <br> <br>
+
+<label for="ordertype"> Order type : </label>
+
+<select name="standards" id="standards">
+  <option value="Limited">Limited</option>
+  <option value="Market">Market</option>
+
+</select>
+<br> <br> <br>
+<form>
+ price  : <br>
+ <input type="text" pattern="[0-9]+(\\.[0-9][0-9]?)?"> <br> <br>
+ quantity : <br>
+ <input type="text" pattern="[0-9]"> <br> <br>
+ </form>
+ <button type="submit" (click)="signIn()" class="btn btn-primary" style="padding: 10px;width:100px; margin-left:100px">Place order</button>
+</form>
+</div>
+
+</html>
+<router-outlet></router-outlet>
